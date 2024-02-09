@@ -1,0 +1,38 @@
+*{
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container{
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  width: 30vw;
+  height: 50vh;
+  /* border-radius: 20px; */
+}
+
+h3{
+  animation: movement 1s;
+  position: absolute;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes movement{
+  from{top: -1200px;}
+  to{top:50%; opacity: 1;}
+}
+
+.App :nth-child(3){
+  margin-top:20px;
+  animation-delay: 1s;
+
+}
